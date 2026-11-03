@@ -322,6 +322,17 @@
       line-height: 1.3;
     }
 
+    @media (max-width: 768px) {
+        .benefits-grid {
+            grid-template-columns: 1fr;       /* одна колонка вместо 4 */
+            justify-items: center;           /* центрирует содержимое ячеек по горизонтали */
+        }
+
+        .benefit-item {
+            justify-content: center;         /* центрирует иконку и текст внутри ячейки */
+        }
+    }
+
     /* --- Блок "Абонементы" --- */
     .tariffs-grid {
       display: grid;
